@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>Services – Vivific Ltd</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="description" content="Vivific Ltd offers software architecture, cloud, integration, and delivery consulting services for modern digital platforms." />
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <div class="page">
+    <header>
+      <div class="nav">
+        <div class="nav-left">
+          <div class="logo-mark">V</div>
+          <div class="logo-text">
+            <div class="logo-text-main">Vivific Ltd</div>
+            <div class="logo-text-sub">Software & Architecture Consulting</div>
+          </div>
+        </div>
+        <nav class="nav-links">
+          <a href="index.html">Home</a>
+          <a href="services.html" class="nav-active">Services</a>
+          <a href="projects.html">Projects</a>
+          <a href="about.html">About</a>
+          <a href="contact.html">Contact</a>
+        </nav>
+      </div>
+    </header>
+
+    <main>
+      <section class="section section--hero">
+        <div class="section-heading-row">
+          <h1 class="section-title">Services</h1>
+          <p class="section-subtitle">
+            We can step into a programme at different stages – from early discovery to in-flight delivery.
+            Our services are modular so you can pick what you need.
+          </p>
+        </div>
+
+        <div class="card-grid card-grid--three">
+          <article class="card">
+            <h3>Architecture Discovery & Strategy</h3>
+            <p>
+              Understand where you are today, where you want to be, and how to get there
+              without freezing delivery.
+            </p>
+            <ul>
+              <li>Current-state assessments and gap analysis</li>
+              <li>Architecture vision and principles</li>
+              <li>Target state options and recommendations</li>
+            </ul>
+          </article>
+
+          <article class="card">
+            <h3>Solution Architecture & Design</h3>
+            <p>
+              End-to-end solution designs for new systems, migrations, and major changes –
+              aligned with existing standards and governance.
+            </p>
+            <ul>
+              <li>Solution options and trade-off analysis</li>
+              <li>C4 diagrams, integration contracts, data flows</li>
+              <li>Security, resilience, and observability patterns</li>
+            </ul>
+          </article>
+
+          <article class="card">
+            <h3>Cloud & Platform Consulting</h3>
+            <p>
+              Support for building or evolving cloud platforms based on AWS, Azure,
+              containers, and managed services.
+            </p>
+            <ul>
+              <li>Landing zones, multi-account structures</li>
+              <li>API gateways, messaging, and event streams</li>
+              <li>Data platform and analytics integration</li>
+            </ul>
+          </article>
+
+          <article class="card">
+            <h3>Integration & Data Engineering</h3>
+            <p>
+              Design and implementation guidance for integration layers
+              and data feeds that other teams can actually own.
+            </p>
+            <ul>
+              <li>Event-driven integration with Kafka and queues</li>
+              <li>Operational data stores and staging schemas</li>
+              <li>Downstream data sharing and reporting feeds</li>
+            </ul>
+          </article>
+
+          <article class="card">
+            <h3>Programme & Delivery Support</h3>
+            <p>
+              We partner with delivery teams, vendors, and internal architects to keep
+              large programmes coherent and moving.
+            </p>
+            <ul>
+              <li>Architecture runway and backlog support</li>
+              <li>Design reviews, approvals, and guardrails</li>
+              <li>Vendor solution validation and RFP input</li>
+            </ul>
+          </article>
+
+          <article class="card">
+            <h3>Lightweight Advisory Retainers</h3>
+            <p>
+              Ongoing access to architectural support without needing a full-time hire.
+            </p>
+            <ul>
+              <li>Regular check-ins and design clinics</li>
+              <li>Review of key decisions and documents</li>
+              <li>Slack/Teams-style “ask us anything” support</li>
+            </ul>
+          </article>
+        </div>
+      </section>
+    </main>
+
+    <footer>
+      <div class="footer-inner">
+        <div>© <span id="year"></span> Vivific Ltd. All rights reserved.</div>
+        <div class="footer-links">
+          <a href="index.html">Home</a>
+          <a href="projects.html">Projects</a>
+          <a href="about.html">About</a>
+          <a href="contact.html">Contact</a>
+        </div>
+      </div>
+    </footer>
+  </div>
+
+  <script>
+    document.getElementById("year").textContent = new Date().getFullYear();
+  </script>
+</body>
+</html>
