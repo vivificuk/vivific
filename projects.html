@@ -1,98 +1,88 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8" />
-  <title>Projects – Vivific Ltd</title>
-  <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <meta name="description" content="Examples of projects Vivific Ltd has supported across public sector, financial services, and enterprise integration." />
-  <link rel="stylesheet" href="styles.css" />
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Selected Projects | Vivific Ltd</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600&family=Space+Grotesk:wght@500;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-  <div class="page">
+
     <header>
-      <div class="nav">
-        <div class="nav-left">
-          <div class="logo-mark">V</div>
-          <div class="logo-text">
-            <div class="logo-text-main">Vivific Ltd</div>
-            <div class="logo-text-sub">Software & Architecture Consulting</div>
-          </div>
+        <div class="container nav-wrapper">
+            <a href="index.html" class="logo">
+                <div class="logo-mark">V</div>
+                <span>Vivific Ltd<small>Software & Architecture Consulting</small></span>
+            </a>
+            <button class="menu-toggle">☰</button>
+            <nav class="nav-links">
+                <a href="index.html">Home</a>
+                <a href="services.html">Services</a>
+                <a href="projects.html" class="active">Projects</a>
+                <a href="about.html">About</a>
+                <a href="contact.html">Contact</a>
+            </nav>
         </div>
-        <nav class="nav-links">
-          <a href="index.html">Home</a>
-          <a href="services.html">Services</a>
-          <a href="projects.html" class="nav-active">Projects</a>
-          <a href="about.html">About</a>
-          <a href="contact.html">Contact</a>
-        </nav>
-      </div>
     </header>
 
     <main>
-      <section class="section section--hero">
-        <div class="section-heading-row">
-          <h1 class="section-title">Selected Work</h1>
-          <p class="section-subtitle">
-            A sample of the types of engagements we support.
-            Client names and details can be shared privately where appropriate.
-          </p>
-        </div>
+        <section>
+            <div class="container">
+                <span class="kicker">Selected Work</span>
+                <h1>Solving high-scale problems.</h1>
+                <p>We respect client confidentiality. Below is a selection of recent engagements delivered across public and private sectors.</p>
 
-        <ul class="projects-list">
-          <li class="projects-item">
-            <div class="projects-label">Public sector</div>
-            <div class="projects-title">Real-time data distribution for social security systems</div>
-            <div class="projects-meta">
-              Designed a Kafka-based data distribution platform feeding downstream analytics and sharing services.
-              Work included target architecture, integration standards, streaming pipelines, and documentation for delivery teams.
-            </div>
-          </li>
+                <div class="card-grid">
+                    
+                    <article class="card">
+                        <span class="pill">Public Sector</span>
+                        <h3>Real-time Data Distribution</h3>
+                        <p>Designed and led the delivery of a national-scale event streaming platform. The solution replaced 15 years of legacy batch files with real-time Kafka streams, enabling other government departments to consume vital citizen data instantly and securely.</p>
+                    </article>
 
-          <li class="projects-item">
-            <div class="projects-label">Financial services</div>
-            <div class="projects-title">Customer journey and secure document platform</div>
-            <div class="projects-meta">
-              Defined the architecture for unified purchase flows and secure document management, including API design,
-              eventing, security controls, and migration from legacy systems.
-            </div>
-          </li>
+                    <article class="card">
+                        <span class="pill">Financial Services</span>
+                        <h3>Secure Document Platform</h3>
+                        <p>Architected a secure, customer-facing document repository for a major wealth management firm. We defined the cloud security posture (AWS), encryption standards, and API integration strategy to connect legacy mainframes with a modern React frontend.</p>
+                    </article>
 
-          <li class="projects-item">
-            <div class="projects-label">Enterprise integration</div>
-            <div class="projects-title">Cloud-native integration patterns and standards</div>
-            <div class="projects-meta">
-              Created a catalogue of integration patterns for teams moving to cloud and event-driven styles,
-              covering APIs, messaging, data contracts, and observability best practices.
-            </div>
-          </li>
+                    <article class="card">
+                        <span class="pill">Enterprise Retail</span>
+                        <h3>Monolith Deconstruction</h3>
+                        <p>Supported a large retailer in breaking down a PHP monolith into domain-driven microservices. We mapped the bounded contexts, defined the service boundaries, and implemented a strangler-fig pattern to migrate without downtime.</p>
+                    </article>
 
-          <li class="projects-item">
-            <div class="projects-label">Modernisation</div>
-            <div class="projects-title">Re-architecting legacy workloads for cloud</div>
-            <div class="projects-meta">
-              Worked with internal teams to break down a monolithic application into modular services,
-              clarifying boundaries, data flows, and a step-by-step migration path while keeping operations stable.
+                    <article class="card">
+                        <span class="pill">Logistics</span>
+                        <h3>Cloud-Native Integration</h3>
+                        <p>Established a center of excellence for integration standards. We delivered a reusable library of Terraform modules and CI/CD templates, allowing development teams to self-serve infrastructure while adhering to corporate governance.</p>
+                    </article>
+
+                </div>
             </div>
-          </li>
-        </ul>
-      </section>
+        </section>
     </main>
 
     <footer>
-      <div class="footer-inner">
-        <div>© <span id="year"></span> Vivific Ltd. All rights reserved.</div>
-        <div class="footer-links">
-          <a href="index.html">Home</a>
-          <a href="services.html">Services</a>
-          <a href="about.html">About</a>
-          <a href="contact.html">Contact</a>
+        <div class="container">
+            <div class="footer-links">
+                <a href="index.html">Home</a>
+                <a href="services.html">Services</a>
+                <a href="projects.html">Projects</a>
+                <a href="about.html">About</a>
+                <a href="contact.html">Contact</a>
+            </div>
+            <p class="copyright">&copy; <script>document.write(new Date().getFullYear())</script> Vivific Ltd. All rights reserved.</p>
         </div>
-      </div>
     </footer>
-  </div>
 
-  <script>
-    document.getElementById("year").textContent = new Date().getFullYear();
-  </script>
+    <script>
+        const toggle = document.querySelector('.menu-toggle');
+        const nav = document.querySelector('.nav-links');
+        toggle.addEventListener('click', () => nav.classList.toggle('active'));
+    </script>
 </body>
 </html>
