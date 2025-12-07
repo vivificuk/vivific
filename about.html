@@ -7,30 +7,85 @@
   <link rel="stylesheet" href="styles.css">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;600;700;800&family=Inter:wght@300;400;600&display=swap" rel="stylesheet">
+  
+  <style>
+    /* 
+      Internal styles to enforce centering logic 
+      (You can move these to styles.css if preferred) 
+    */
+    
+    /* 1. Ensure the main container is centered on the screen */
+    .container {
+      max-width: 1200px;
+      margin: 0 auto; /* Centers the box horizontally */
+      padding: 0 1.5rem;
+      width: 100%;
+    }
+
+    /* 2. Center the Page Titles */
+    .section-title {
+      text-align: center;
+      max-width: 800px;
+      margin: 0 auto 3rem auto;
+    }
+
+    /* 3. Center the Text Blocks (Paragraphs) */
+    .about-layout {
+      max-width: 800px; /* Reading width */
+      margin: 0 auto;   /* Centers the block */
+    }
+
+    /* 4. Center Grid Items (Values/Skills) */
+    .values h3, .skills h3 {
+      text-align: center;
+      margin-bottom: 2rem;
+    }
+
+    .value-cards {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+      gap: 2rem;
+      justify-content: center;
+    }
+    
+    .skills-tags {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center; /* Centers the pills */
+      gap: 0.8rem;
+      max-width: 900px;
+      margin: 0 auto;
+    }
+
+    /* Spacing utilities */
+    section { padding: 4rem 0; }
+    p { margin-bottom: 1.5rem; line-height: 1.6; color: #94a3b8; }
+    h2, h3, h4 { color: #ffffff; margin-bottom: 1rem; }
+  </style>
 </head>
 <body>
+  
   <header>
     <div class="container">
-      <div class="header-container">
-        <div class="logo">
-          <div class="logo-mark">V</div>
+      <div class="nav-wrapper" style="display: flex; justify-content: space-between; align-items: center; padding: 1rem 0;">
+        <div class="logo" style="display: flex; align-items: center; gap: 10px; color: #fff; font-weight: bold; font-family: 'Space Grotesk', sans-serif;">
+          <div class="logo-mark" style="background:#22d3ee; color:#0f172a; width:32px; height:32px; display:grid; place-items:center; border-radius:6px;">V</div>
           <div class="logo-text">
             <div class="logo-title">Vivific Ltd</div>
-            <div class="logo-subtitle">Software & Architecture Consulting</div>
           </div>
         </div>
-        <button class="mobile-menu-toggle" id="mobile-menu-toggle">
-          <span></span>
-          <span></span>
-          <span></span>
-        </button>
+        
+        <!-- Mobile Toggle -->
+        <button class="mobile-menu-toggle" id="mobile-menu-toggle" style="background:none; border:none; color:#fff; font-size:1.5rem; display:none;">☰</button>
+        
+        <!-- Desktop Nav -->
         <nav id="main-nav">
-          <ul>
+          <ul style="display: flex; gap: 2rem; list-style: none;">
             <li><a href="index.html">Home</a></li>
             <li><a href="services.html">Services</a></li>
             <li><a href="projects.html">Projects</a></li>
-            <li><a href="about.html">About</a></li>
+            <li><a href="about.html" style="color:#22d3ee">About</a></li>
             <li><a href="contact.html">Contact</a></li>
           </ul>
         </nav>
@@ -39,60 +94,86 @@
   </header>
 
   <main>
+    <!-- Intro Section -->
     <section class="page-intro">
       <div class="container">
         <div class="section-title">
-          <h2>About Vivific</h2>
-          <p>We're an independent technology studio focused on clear thinking and practical delivery, not just slide-ware.</p>
+          <span style="color: #22d3ee; text-transform: uppercase; letter-spacing: 0.1em; font-weight: 700; font-size: 0.9rem;">Who We Are</span>
+          <h2 style="font-size: 3rem; margin-top: 0.5rem;">Clear thinking in a <br>complicated world.</h2>
         </div>
       </div>
     </section>
 
+    <!-- Main Text Content (Centered Layout) -->
     <section class="about-content">
       <div class="container">
-        <div class="about-content">
+        <!-- We use a specific wrapper here to limit width and center it -->
+        <div class="about-layout">
+          
           <div class="about-description">
-            <p>Vivific was founded with a simple premise: technology should serve business goals, not the other way around. We bring together deep technical expertise with a pragmatic approach to help organisations solve complex challenges.</p>
-            <p>Our team has worked across public and private sectors, delivering solutions that range from enterprise architecture transformations to rapid product development. We pride ourselves on our ability to bridge the gap between technical teams and business stakeholders.</p>
-            <p>Unlike traditional consultancies, we roll up our sleeves and work alongside your teams. We believe in knowledge transfer and capability building, ensuring that the solutions we help create can be maintained and evolved long after we're gone.</p>
+            <p style="font-size: 1.2rem; color: #fff;">
+              Vivific was founded with a simple premise: technology should serve business goals, not the other way around. We bring together deep technical expertise with a pragmatic approach to help organisations solve complex challenges.
+            </p>
+            <p>
+              Our team has worked across public and private sectors, delivering solutions that range from enterprise architecture transformations to rapid product development. We pride ourselves on our ability to bridge the gap between technical teams and business stakeholders.
+            </p>
+            <p>
+              Unlike traditional consultancies, we roll up our sleeves and work alongside your teams. We believe in knowledge transfer and capability building, ensuring that the solutions we help create can be maintained and evolved long after we're gone.
+            </p>
           </div>
-          <div class="about-approach">
+
+          <div class="about-approach" style="margin-top: 4rem; border-top: 1px solid rgba(148, 163, 184, 0.1); padding-top: 4rem;">
             <h3>Our Approach</h3>
-            <p>We take a collaborative, iterative approach to every project. We start by understanding your context and challenges, then work with you to define a clear path forward. We believe in transparency and regular communication, ensuring that everyone stays aligned throughout the engagement.</p>
-            <p>Our methodologies draw from best practices in architecture, agile delivery, and design thinking. We adapt our approach based on your specific needs, culture, and constraints.</p>
+            <p>
+              We take a collaborative, iterative approach to every project. We start by understanding your context and challenges, then work with you to define a clear path forward. We believe in transparency and regular communication, ensuring that everyone stays aligned throughout the engagement.
+            </p>
+            <p>
+              Our methodologies draw from best practices in architecture, agile delivery, and design thinking. We adapt our approach based on your specific needs, culture, and constraints.
+            </p>
           </div>
+          
         </div>
       </div>
     </section>
 
+    <!-- Values Section -->
     <section class="values">
       <div class="container">
         <h3>Our Values</h3>
         <div class="value-cards">
-          <div class="value-card">
+          
+          <div class="value-card" style="background: #1e293b; padding: 2rem; border-radius: 12px; border: 1px solid rgba(148, 163, 184, 0.1);">
             <h4>Context First</h4>
-            <p>We believe that effective solutions must be grounded in a deep understanding of your business context, challenges, and goals.</p>
+            <p style="margin-bottom: 0;">We believe that effective solutions must be grounded in a deep understanding of your business context, challenges, and goals.</p>
           </div>
-          <div class="value-card">
+          
+          <div class="value-card" style="background: #1e293b; padding: 2rem; border-radius: 12px; border: 1px solid rgba(148, 163, 184, 0.1);">
             <h4>Simplicity</h4>
-            <p>We strive for elegant simplicity in our solutions, avoiding unnecessary complexity and focusing on what delivers real value.</p>
+            <p style="margin-bottom: 0;">We strive for elegant simplicity in our solutions, avoiding unnecessary complexity and focusing on what delivers real value.</p>
           </div>
-          <div class="value-card">
+          
+          <div class="value-card" style="background: #1e293b; padding: 2rem; border-radius: 12px; border: 1px solid rgba(148, 163, 184, 0.1);">
             <h4>Transparency</h4>
-            <p>We believe in open communication and full transparency throughout our engagements, ensuring there are no surprises.</p>
+            <p style="margin-bottom: 0;">We believe in open communication and full transparency throughout our engagements, ensuring there are no surprises.</p>
           </div>
-          <div class="value-card">
+          
+          <div class="value-card" style="background: #1e293b; padding: 2rem; border-radius: 12px; border: 1px solid rgba(148, 163, 184, 0.1);">
             <h4>Partnership</h4>
-            <p>We see ourselves as partners in your success, working collaboratively with your teams to achieve shared goals.</p>
+            <p style="margin-bottom: 0;">We see ourselves as partners in your success, working collaboratively with your teams to achieve shared goals.</p>
           </div>
+
         </div>
       </div>
     </section>
 
+    <!-- Skills Section -->
     <section class="skills">
       <div class="container">
         <h3>Our Expertise</h3>
         <div class="skills-tags">
+          <!-- Styling for tags is assumed from styles.css or added inline here -->
+          <style>.tag { background: #1e293b; padding: 0.5rem 1rem; border-radius: 4px; border: 1px solid rgba(148, 163, 184, 0.2); font-size: 0.9rem; color: #cbd5e1; }</style>
+          
           <span class="tag">Software architecture</span>
           <span class="tag">Cloud platforms</span>
           <span class="tag">Integration</span>
@@ -110,12 +191,12 @@
     </section>
   </main>
 
-  <footer>
+  <!-- Footer -->
+  <footer style="margin-top: 4rem; padding: 3rem 0; border-top: 1px solid rgba(148, 163, 184, 0.1); text-align: center;">
     <div class="container">
       <div class="footer-content">
-        <div class="footer-logo">Vivific Ltd</div>
-        <div class="footer-links">
-          <ul>
+        <div class="footer-links" style="margin-bottom: 1.5rem;">
+          <ul style="display: flex; justify-content: center; gap: 2rem; list-style: none; padding:0;">
             <li><a href="index.html">Home</a></li>
             <li><a href="services.html">Services</a></li>
             <li><a href="projects.html">Projects</a></li>
@@ -125,22 +206,24 @@
         </div>
       </div>
       <div class="copyright">
-        <p>&copy; <span id="current-year"></span> Vivific Ltd. All rights reserved.</p>
+        <p style="font-size: 0.9rem;">&copy; <span id="current-year"></span> Vivific Ltd. All rights reserved.</p>
       </div>
     </div>
   </footer>
 
   <script>
-    // Set current year in footer
     document.getElementById('current-year').textContent = new Date().getFullYear();
 
-    // Mobile menu toggle
     const mobileMenuToggle = document.getElementById('mobile-menu-toggle');
     const mainNav = document.getElementById('main-nav');
 
-    mobileMenuToggle.addEventListener('click', function() {
-      mainNav.classList.toggle('active');
-    });
+    // Basic toggle logic if needed for mobile
+    if(mobileMenuToggle && mainNav) {
+      mobileMenuToggle.addEventListener('click', function() {
+        const isHidden = mainNav.style.display === 'none' || mainNav.style.display === '';
+        mainNav.style.display = isHidden ? 'block' : 'none';
+      });
+    }
   </script>
 </body>
 </html>
