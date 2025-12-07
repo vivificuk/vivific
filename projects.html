@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>Projects – Vivific Ltd</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="description" content="Examples of projects Vivific Ltd has supported across public sector, financial services, and enterprise integration." />
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <div class="page">
+    <header>
+      <div class="nav">
+        <div class="nav-left">
+          <div class="logo-mark">V</div>
+          <div class="logo-text">
+            <div class="logo-text-main">Vivific Ltd</div>
+            <div class="logo-text-sub">Software & Architecture Consulting</div>
+          </div>
+        </div>
+        <nav class="nav-links">
+          <a href="index.html">Home</a>
+          <a href="services.html">Services</a>
+          <a href="projects.html" class="nav-active">Projects</a>
+          <a href="about.html">About</a>
+          <a href="contact.html">Contact</a>
+        </nav>
+      </div>
+    </header>
+
+    <main>
+      <section class="section section--hero">
+        <div class="section-heading-row">
+          <h1 class="section-title">Selected Work</h1>
+          <p class="section-subtitle">
+            A sample of the types of engagements we support.
+            Client names and details can be shared privately where appropriate.
+          </p>
+        </div>
+
+        <ul class="projects-list">
+          <li class="projects-item">
+            <div class="projects-label">Public sector</div>
+            <div class="projects-title">Real-time data distribution for social security systems</div>
+            <div class="projects-meta">
+              Designed a Kafka-based data distribution platform feeding downstream analytics and sharing services.
+              Work included target architecture, integration standards, streaming pipelines, and documentation for delivery teams.
+            </div>
+          </li>
+
+          <li class="projects-item">
+            <div class="projects-label">Financial services</div>
+            <div class="projects-title">Customer journey and secure document platform</div>
+            <div class="projects-meta">
+              Defined the architecture for unified purchase flows and secure document management, including API design,
+              eventing, security controls, and migration from legacy systems.
+            </div>
+          </li>
+
+          <li class="projects-item">
+            <div class="projects-label">Enterprise integration</div>
+            <div class="projects-title">Cloud-native integration patterns and standards</div>
+            <div class="projects-meta">
+              Created a catalogue of integration patterns for teams moving to cloud and event-driven styles,
+              covering APIs, messaging, data contracts, and observability best practices.
+            </div>
+          </li>
+
+          <li class="projects-item">
+            <div class="projects-label">Modernisation</div>
+            <div class="projects-title">Re-architecting legacy workloads for cloud</div>
+            <div class="projects-meta">
+              Worked with internal teams to break down a monolithic application into modular services,
+              clarifying boundaries, data flows, and a step-by-step migration path while keeping operations stable.
+            </div>
+          </li>
+        </ul>
+      </section>
+    </main>
+
+    <footer>
+      <div class="footer-inner">
+        <div>© <span id="year"></span> Vivific Ltd. All rights reserved.</div>
+        <div class="footer-links">
+          <a href="index.html">Home</a>
+          <a href="services.html">Services</a>
+          <a href="about.html">About</a>
+          <a href="contact.html">Contact</a>
+        </div>
+      </div>
+    </footer>
+  </div>
+
+  <script>
+    document.getElementById("year").textContent = new Date().getFullYear();
+  </script>
+</body>
+</html>
