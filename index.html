@@ -1,121 +1,131 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Vivific Ltd | Software & Architecture Consulting</title>
-    <meta name="description" content="Vivific is an independent solution architecture consulting firm. We design and deliver modern software platforms.">
-    <!-- Google Fonts -->
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600&family=Space+Grotesk:wght@500;700&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="styles.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Vivific Ltd - Software & Architecture Consulting</title>
+  <link rel="stylesheet" href="styles.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;600;700&display=swap" rel="stylesheet">
 </head>
 <body>
-
-    <!-- Header -->
-    <header>
-        <div class="container nav-wrapper">
-            <a href="index.html" class="logo">
-                <div class="logo-mark">V</div>
-                <span>Vivific Ltd<small>Software & Architecture Consulting</small></span>
-            </a>
-            <button class="menu-toggle" aria-label="Toggle Menu">☰</button>
-            <nav class="nav-links">
-                <a href="index.html" class="active">Home</a>
-                <a href="services.html">Services</a>
-                <a href="projects.html">Projects</a>
-                <a href="about.html">About</a>
-                <a href="contact.html">Contact</a>
-            </nav>
+  <header>
+    <div class="container">
+      <div class="header-container">
+        <div class="logo">
+          <div class="logo-mark">V</div>
+          <div class="logo-text">
+            <div class="logo-title">Vivific Ltd</div>
+            <div class="logo-subtitle">Software & Architecture Consulting</div>
+          </div>
         </div>
-    </header>
+        <button class="mobile-menu-toggle" id="mobile-menu-toggle">
+          <span></span>
+          <span></span>
+          <span></span>
+        </button>
+        <nav id="main-nav">
+          <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="services.html">Services</a></li>
+            <li><a href="projects.html">Projects</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="contact.html">Contact</a></li>
+          </ul>
+        </nav>
+      </div>
+    </div>
+  </header>
 
-    <main>
-        <!-- Hero Section -->
-        <section class="hero">
-            <div class="container">
-                <span class="kicker">Independent Technology Studio</span>
-                <h1>We design and deliver modern<br> software platforms that actually ship.</h1>
-                <p class="hero-text">
-                    Vivific specializes in high-impact solution architecture, cloud platforms, and digital delivery. 
-                    We cut through the noise to help organizations build resilient, scalable technology.
-                </p>
-                <div class="btn-group">
-                    <a href="contact.html" class="btn btn-primary">Schedule a conversation</a>
-                    <a href="services.html" class="btn btn-secondary">Explore our services</a>
-                </div>
-            </div>
-        </section>
-
-        <!-- Value Proposition -->
-        <section>
-            <div class="container">
-                <div class="card-grid">
-                    <article class="card">
-                        <h3>Strategy & Architecture</h3>
-                        <p>We provide clarity in complex environments. From enterprise roadmaps to microservices design, we ensure your technical direction aligns with business goals.</p>
-                        <ul>
-                            <li>Technical Discovery</li>
-                            <li>Solution Design</li>
-                            <li>Legacy Modernization</li>
-                        </ul>
-                    </article>
-
-                    <article class="card">
-                        <h3>Cloud & Platforms</h3>
-                        <p>We build foundations for speed. We design cloud-native environments that are secure, compliant, and ready for rapid deployment.</p>
-                        <ul>
-                            <li>AWS / Azure / GCP</li>
-                            <li>Container Platforms</li>
-                            <li>Integration Patterns</li>
-                        </ul>
-                    </article>
-
-                    <article class="card">
-                        <h3>Delivery & Governance</h3>
-                        <p>Architecture is nothing without delivery. We embed with your teams to provide governance, code-level guidance, and engineering standards.</p>
-                        <ul>
-                            <li>Agile Delivery Support</li>
-                            <li>Technical Governance</li>
-                            <li>Engineering Standards</li>
-                        </ul>
-                    </article>
-                </div>
-            </div>
-        </section>
-
-        <section style="text-align: center;">
-            <div class="container">
-                <p style="font-size: 1.25rem; color: #fff; max-width: 800px; margin: 0 auto;">
-                    We work with public sector bodies, financial institutions, and ambitious scale-ups to move from 
-                    discovery to live production.
-                </p>
-            </div>
-        </section>
-    </main>
-
-    <!-- Footer -->
-    <footer>
-        <div class="container">
-            <div class="footer-links">
-                <a href="index.html">Home</a>
-                <a href="services.html">Services</a>
-                <a href="projects.html">Projects</a>
-                <a href="about.html">About</a>
-                <a href="contact.html">Contact</a>
-            </div>
-            <p class="copyright">&copy; <script>document.write(new Date().getFullYear())</script> Vivific Ltd. All rights reserved.</p>
+  <main>
+    <section class="hero">
+      <div class="container">
+        <div class="hero-content">
+          <div class="kicker">Independent technology studio</div>
+          <h1>We design and deliver modern software platforms that actually ship.</h1>
+          <p>We specialise in architecture, cloud platforms, and digital delivery for complex systems across public and private sectors.</p>
+          <div class="cta-buttons">
+            <a href="contact.html" class="btn btn-primary">Schedule a conversation</a>
+            <a href="services.html" class="btn btn-secondary">Explore our services</a>
+          </div>
         </div>
-    </footer>
+      </div>
+    </section>
 
-    <script>
-        // Simple Mobile Menu Toggle
-        const toggle = document.querySelector('.menu-toggle');
-        const nav = document.querySelector('.nav-links');
-        toggle.addEventListener('click', () => {
-            nav.classList.toggle('active');
-        });
-    </script>
+    <section class="what-we-do">
+      <div class="container">
+        <div class="section-title">
+          <h2>What we do</h2>
+          <p>We provide end-to-end architecture and delivery services, working from discovery through to implementation.</p>
+        </div>
+        <div class="cards">
+          <div class="card">
+            <h3>Architecture & Technical Strategy</h3>
+            <p>We help organisations define their technology strategy and create robust architectures that align with business goals.</p>
+            <ul>
+              <li>Enterprise architecture design</li>
+              <li>Technology roadmapping</li>
+              <li>Technical due diligence</li>
+              <li>Architecture governance</li>
+            </ul>
+          </div>
+          <div class="card">
+            <h3>Cloud, Integration & Data Platforms</h3>
+            <p>We design and implement cloud-native solutions that connect systems and unlock the value of your data.</p>
+            <ul>
+              <li>Cloud migration strategies</li>
+              <li>API design and implementation</li>
+              <li>Data architecture</li>
+              <li>Microservices design</li>
+            </ul>
+          </div>
+          <div class="card">
+            <h3>Delivery Support & Governance</h3>
+            <p>We provide hands-on support to ensure your technology projects deliver value and meet quality standards.</p>
+            <ul>
+              <li>Technical delivery leadership</li>
+              <li>Quality assurance frameworks</li>
+              <li>Team capability building</li>
+              <li>Agile delivery practices</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <div class="container">
+      <div class="footer-content">
+        <div class="footer-logo">Vivific Ltd</div>
+        <div class="footer-links">
+          <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="services.html">Services</a></li>
+            <li><a href="projects.html">Projects</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="contact.html">Contact</a></li>
+          </ul>
+        </div>
+      </div>
+      <div class="copyright">
+        <p>&copy; <span id="current-year"></span> Vivific Ltd. All rights reserved.</p>
+      </div>
+    </div>
+  </footer>
+
+  <script>
+    // Set current year in footer
+    document.getElementById('current-year').textContent = new Date().getFullYear();
+
+    // Mobile menu toggle
+    const mobileMenuToggle = document.getElementById('mobile-menu-toggle');
+    const mainNav = document.getElementById('main-nav');
+
+    mobileMenuToggle.addEventListener('click', function() {
+      mainNav.classList.toggle('active');
+    });
+  </script>
 </body>
 </html>
