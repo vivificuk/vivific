@@ -1,139 +1,131 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8" />
-  <title>Services – Vivific Ltd</title>
-  <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <meta name="description" content="Vivific Ltd offers software architecture, cloud, integration, and delivery consulting services for modern digital platforms." />
-  <link rel="stylesheet" href="styles.css" />
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Services | Vivific Ltd</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600&family=Space+Grotesk:wght@500;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-  <div class="page">
+
     <header>
-      <div class="nav">
-        <div class="nav-left">
-          <div class="logo-mark">V</div>
-          <div class="logo-text">
-            <div class="logo-text-main">Vivific Ltd</div>
-            <div class="logo-text-sub">Software & Architecture Consulting</div>
-          </div>
+        <div class="container nav-wrapper">
+            <a href="index.html" class="logo">
+                <div class="logo-mark">V</div>
+                <span>Vivific Ltd<small>Software & Architecture Consulting</small></span>
+            </a>
+            <button class="menu-toggle">☰</button>
+            <nav class="nav-links">
+                <a href="index.html">Home</a>
+                <a href="services.html" class="active">Services</a>
+                <a href="projects.html">Projects</a>
+                <a href="about.html">About</a>
+                <a href="contact.html">Contact</a>
+            </nav>
         </div>
-        <nav class="nav-links">
-          <a href="index.html">Home</a>
-          <a href="services.html" class="nav-active">Services</a>
-          <a href="projects.html">Projects</a>
-          <a href="about.html">About</a>
-          <a href="contact.html">Contact</a>
-        </nav>
-      </div>
     </header>
 
     <main>
-      <section class="section section--hero">
-        <div class="section-heading-row">
-          <h1 class="section-title">Services</h1>
-          <p class="section-subtitle">
-            We can step into a programme at different stages – from early discovery to in-flight delivery.
-            Our services are modular so you can pick what you need.
-          </p>
-        </div>
+        <section>
+            <div class="container">
+                <span class="kicker">Our Expertise</span>
+                <h1>Modular services for<br>complex programmes.</h1>
+                <p style="max-width: 600px;">
+                    We engage at different stages of the software lifecycle. Whether you need an initial technical strategy, 
+                    hands-on solution design, or support getting a distressed project over the line, we can help.
+                </p>
 
-        <div class="card-grid card-grid--three">
-          <article class="card">
-            <h3>Architecture Discovery & Strategy</h3>
-            <p>
-              Understand where you are today, where you want to be, and how to get there
-              without freezing delivery.
-            </p>
-            <ul>
-              <li>Current-state assessments and gap analysis</li>
-              <li>Architecture vision and principles</li>
-              <li>Target state options and recommendations</li>
-            </ul>
-          </article>
+                <div class="card-grid">
+                    <article class="card">
+                        <h3>Architecture Discovery</h3>
+                        <p>We help you understand the problem space before writing code. We audit existing estates and define the target architecture.</p>
+                        <ul>
+                            <li>Estate Audits & Assessment</li>
+                            <li>Technology Selection</li>
+                            <li>Cost/Benefit Analysis</li>
+                            <li>Stakeholder Management</li>
+                        </ul>
+                    </article>
 
-          <article class="card">
-            <h3>Solution Architecture & Design</h3>
-            <p>
-              End-to-end solution designs for new systems, migrations, and major changes –
-              aligned with existing standards and governance.
-            </p>
-            <ul>
-              <li>Solution options and trade-off analysis</li>
-              <li>C4 diagrams, integration contracts, data flows</li>
-              <li>Security, resilience, and observability patterns</li>
-            </ul>
-          </article>
+                    <article class="card">
+                        <h3>Solution Architecture</h3>
+                        <p>Detailed design for complex systems. We produce high-level designs (HLD) and low-level specifications that developers can actually use.</p>
+                        <ul>
+                            <li>Microservices Design</li>
+                            <li>API Specifications (OpenAPI)</li>
+                            <li>Security Architecture</li>
+                            <li>Data Modeling</li>
+                        </ul>
+                    </article>
 
-          <article class="card">
-            <h3>Cloud & Platform Consulting</h3>
-            <p>
-              Support for building or evolving cloud platforms based on AWS, Azure,
-              containers, and managed services.
-            </p>
-            <ul>
-              <li>Landing zones, multi-account structures</li>
-              <li>API gateways, messaging, and event streams</li>
-              <li>Data platform and analytics integration</li>
-            </ul>
-          </article>
+                    <article class="card">
+                        <h3>Cloud & Platform</h3>
+                        <p>Building the factory that builds the software. We design secure, automated cloud environments on AWS, Azure, or GCP.</p>
+                        <ul>
+                            <li>Landing Zone Design</li>
+                            <li>Infrastructure as Code (Terraform)</li>
+                            <li>CI/CD Pipeline Strategy</li>
+                            <li>Containerization (Kubernetes)</li>
+                        </ul>
+                    </article>
 
-          <article class="card">
-            <h3>Integration & Data Engineering</h3>
-            <p>
-              Design and implementation guidance for integration layers
-              and data feeds that other teams can actually own.
-            </p>
-            <ul>
-              <li>Event-driven integration with Kafka and queues</li>
-              <li>Operational data stores and staging schemas</li>
-              <li>Downstream data sharing and reporting feeds</li>
-            </ul>
-          </article>
+                    <article class="card">
+                        <h3>Integration & Data</h3>
+                        <p>Connecting systems in real-time. We move away from batch processing to event-driven architectures and streaming data.</p>
+                        <ul>
+                            <li>Event-Driven Architecture</li>
+                            <li>Kafka & Streaming Platforms</li>
+                            <li>API Gateway Strategy</li>
+                            <li>Legacy Integration</li>
+                        </ul>
+                    </article>
 
-          <article class="card">
-            <h3>Programme & Delivery Support</h3>
-            <p>
-              We partner with delivery teams, vendors, and internal architects to keep
-              large programmes coherent and moving.
-            </p>
-            <ul>
-              <li>Architecture runway and backlog support</li>
-              <li>Design reviews, approvals, and guardrails</li>
-              <li>Vendor solution validation and RFP input</li>
-            </ul>
-          </article>
+                    <article class="card">
+                        <h3>Programme Support</h3>
+                        <p>Bridging the gap between product management and engineering. We act as the "technical conscience" of the delivery team.</p>
+                        <ul>
+                            <li>Technical Leadership</li>
+                            <li>Vendor Assurance</li>
+                            <li>Recruitment Support</li>
+                            <li>Agile Ceremonies</li>
+                        </ul>
+                    </article>
 
-          <article class="card">
-            <h3>Lightweight Advisory Retainers</h3>
-            <p>
-              Ongoing access to architectural support without needing a full-time hire.
-            </p>
-            <ul>
-              <li>Regular check-ins and design clinics</li>
-              <li>Review of key decisions and documents</li>
-              <li>Slack/Teams-style “ask us anything” support</li>
-            </ul>
-          </article>
-        </div>
-      </section>
+                    <article class="card">
+                        <h3>Advisory Retainers</h3>
+                        <p>On-demand access to senior architectural advice for CTOs and Heads of Engineering without the full-time headcount.</p>
+                        <ul>
+                            <li>Strategic Reviews</li>
+                            <li>Architecture Boards</li>
+                            <li>Mentoring Teams</li>
+                        </ul>
+                    </article>
+                </div>
+            </div>
+        </section>
     </main>
 
     <footer>
-      <div class="footer-inner">
-        <div>© <span id="year"></span> Vivific Ltd. All rights reserved.</div>
-        <div class="footer-links">
-          <a href="index.html">Home</a>
-          <a href="projects.html">Projects</a>
-          <a href="about.html">About</a>
-          <a href="contact.html">Contact</a>
+        <div class="container">
+            <div class="footer-links">
+                <a href="index.html">Home</a>
+                <a href="services.html">Services</a>
+                <a href="projects.html">Projects</a>
+                <a href="about.html">About</a>
+                <a href="contact.html">Contact</a>
+            </div>
+            <p class="copyright">&copy; <script>document.write(new Date().getFullYear())</script> Vivific Ltd. All rights reserved.</p>
         </div>
-      </div>
     </footer>
-  </div>
 
-  <script>
-    document.getElementById("year").textContent = new Date().getFullYear();
-  </script>
+    <script src="styles.js"></script> <!-- Optional logic can go here or inline -->
+    <script>
+        const toggle = document.querySelector('.menu-toggle');
+        const nav = document.querySelector('.nav-links');
+        toggle.addEventListener('click', () => nav.classList.toggle('active'));
+    </script>
 </body>
 </html>
